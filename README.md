@@ -1,8 +1,8 @@
-#Sprintly-GitHub
+# Sprintly-GitHub
 
 [Sprint.ly](http://sprint.ly/ 'Sprint.ly') is a great tool for managing work items; [GitHub](http://github.com 'GitHub') is a great tool for managing your code. The tools in this repository will help you take advantage of the integration with GitHub that Sprint.ly offers without drawing your attention away from the terminal. Use the `sprintly` command line tool to get a list of all items assigned to you. Install the `commit-msg` hook to facilitate Sprint.ly's GitHub integration.
 
-#How to use `sprintly`
+# How to use `sprintly`
 
 ```shell
 Usage: sprintly [options]
@@ -20,7 +20,7 @@ Options:
   --update-config   edit configuration
 ```
 
-#Installing `sprintly`
+# Installing `sprintly`
 
 The `sprintly` tool can now install itself. Follow the instructions below to get started:
 
@@ -77,7 +77,7 @@ A file already exists at /usr/local/bin/sprintly. Overwrite file?
 
 Entering `y` will overwrite the old installation with the latest version. *Note: if you have another tool installed at `/usr/local/bin/sprintly`, enter `n` and manually install it under a different name.*
 
-#GitHub Integration: Installing the `commit-msg` hook.
+# GitHub Integration: Installing the `commit-msg` hook.
 
 The `sprintly` tool can install the hook for you. Navigate to a git repository and run:
 
@@ -103,7 +103,7 @@ WARNING: Don't worry - there is an easy fix. Simply run one of the following:
 
 *Note: the hook installed is actually a symbolic link to a shared copy of the hook found at /usr/local/share/sprintly/commit-msg. By doing this, the hook can be easily updated for all users and all repositories by calling `sprintly --update`.*
 
-###Uninstalling the `commit-msg` hook.
+### Uninstalling the `commit-msg` hook.
 
 The `sprintly` tool can uninstall the hook for you as well. Navigate to the git repository in question and run:
 
@@ -112,7 +112,7 @@ $ sprintly --uninstall-hook
 Hook has been uninstalled.
 ```
 
-#Changing the Configuration
+# Changing the Configuration
 
 If, at some point, you wish to change your configuration (you get a new username, API key, or wish to change the default product), type `sprintly --update-config`. Pro tip: you don't have to re-type everything just to change your API Key. Simply press enter to keep the old version of any individual item:
 
@@ -125,7 +125,7 @@ Enter default sprint.ly product id (117 - Company, 129 - Secret):
 Configuration successfully updated.
 ```
 
-#Sample Output
+# Sample Output
 
 Let's run through a few examples of how to take advantage of this tool.
 
@@ -150,7 +150,7 @@ Product: Example Company (https://sprint.ly/product/#/)
 			#4: Write README
 		#2: As a developer, I want a better set of unit tests so that changes to our...
 			#3: Add tests to widget creation page
-#0 - Proceed without Sprint.ly item number.
+# 0 - Proceed without Sprint.ly item number.
 Enter 1 or more item numbers separated by a space: 4
 [master 1e71283] References #4. Normal commit message here.
  1 files changed, 1 insertions(+), 1 deletions(-)
